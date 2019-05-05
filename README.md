@@ -82,5 +82,13 @@ initWithDomain:code:userInfo method can initialize custom error instances.
 @end
 ```
 
+``` console
+2019-05-05 18:14:31.963177-0600 NSError_ObjectiveC[44773:2872899] there is an error
+2019-05-05 18:14:31.963366-0600 NSError_ObjectiveC[44773:2872899] Domain: com.MyCompany.RandomProject.ErrorDomain Code: 4
+2019-05-05 18:14:31.963491-0600 NSError_ObjectiveC[44773:2872899] Description: Maximum parameter is not greater than minimum parameter
+```
+
+
+
 
 
