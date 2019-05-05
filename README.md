@@ -88,6 +88,18 @@ initWithDomain:code:userInfo method can initialize custom error instances.
 2019-05-05 18:14:31.963491-0600 NSError_ObjectiveC[44773:2872899] Description: Maximum parameter is not greater than minimum parameter
 ```
 
+# Test if you have a valid range.
+
+``` objective-c
+NSNumber *result = [self generateRandomInteger:5 :10 :&error];
+```
+
+
+``` console
+2019-05-05 18:19:06.468847-0600 NSError_ObjectiveC[44833:2877282] Random Number: 9
+```
+
+
 
 
 
