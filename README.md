@@ -159,7 +159,24 @@ NSNumber *result = [self generateRandomInteger:5 :10 :&error];
 @end
 ```
 
+# Some Methods Pass Errors by Reference
 
+``` objective-c
+- (BOOL)doSomethingThatMayGenerateAnError:(NSError **)errorPtr;
+```
+
+``` objective-c
+- (BOOL)doSomethingThatMayGenerateAnError:(NSError **)errorPtr {
+    ...
+    // error occurred
+    if (errorPtr) {
+        *errorPtr = [NSError errorWithDomain:...
+                                        code:...
+                                    userInfo:...];
+    }
+    return NO;
+}
+```
 
 
 
