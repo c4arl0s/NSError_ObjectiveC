@@ -170,8 +170,12 @@ NSNumber *result = [self generateRandomInteger:5 :10 :&error];
     ...
     // error occurred
     ...
-    // If an error occurs, you should start by checking whether a non-NULL pointer was provided for the error parameter before you attempt to dereference it to set the error, 
-    // before returning NO to indicate failure, like this:
+    // If an error occurs, you should start by checking whether a non-NULL pointer was provided 
+    // for the error parameter before you attempt to dereference it to set the error, 
+    // before returning NO to indicate failure, I mean if verify if you call the funcion like this:
+    // BOOL success = [self doSomethingThatMayGenerateAnError:nil];
+    // if errorPtr = nil, do nothing
+    // 
     if (errorPtr) {
         *errorPtr = [NSError errorWithDomain:...
                                         code:...
