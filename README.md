@@ -101,6 +101,8 @@ NSNumber *result = [self generateRandomInteger:5 :10 :&error];
 
 # Take a look of how to declare the method
 
+### if generateRandomIntegerBetween:12 and:10 inCaseError:&error
+
 ``` objective-c
 //
 //  ViewController.m
