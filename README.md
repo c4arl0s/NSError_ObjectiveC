@@ -185,6 +185,13 @@ NSNumber *result = [self generateRandomInteger:5 :10 :&error];
 }
 ```
 
+``` console
+2019-05-27 21:05:41.560679-0500 NSError_ObjectiveC[3938:631585] there is an error
+2019-05-27 21:05:41.560814-0500 NSError_ObjectiveC[3938:631585] Domain: com.MyCompany.RandomProject.ErrorDomain Code: 4
+2019-05-27 21:05:41.560909-0500 NSError_ObjectiveC[3938:631585] Description: Maximum parameter is not greater than minimum parameter
+```
+
+
 
 
 
